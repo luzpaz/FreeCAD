@@ -43,27 +43,6 @@ matrix:
           - CMAKE_OPTS="-DBUILD_FEM_NETGEN=ON"
           - PYTHON_MAJOR_VERSION=2
 
-      - os: linux
-        dist: trusty
-        compiler: gcc
-        env:
-          - CMAKE_OPTS="-DBUILD_FEM_NETGEN=ON"
-          - PYTHON_MAJOR_VERSION=2
-
-      - os: linux
-        dist: trusty
-        compiler: gcc
-        env:
-          - CMAKE_OPTS="-DBUILD_FEM_NETGEN=ON"
-          - PYTHON_MAJOR_VERSION=3
-
-      - os: osx
-        osx_image: xcode7.3
-        compiler: clang
-        env:
-          - CMAKE_OPTS="-DBUILD_FEM_NETGEN=ON" QT=Qt5
-          - PYTHON_MAJOR_VERSION=2
-
       - os: osx
         osx_image: xcode7.3
         compiler: clang
@@ -74,14 +53,6 @@ matrix:
 git:
   depth: 5000
 
-notifications:
-  email: false
-  webhooks:
-    urls:
-      - https://webhooks.gitter.im/e/479456663cdf5c84e4d8
-    on_success: always
-    on_failure: always
-    on_start:   change
 
 before_install:
 # Run script to check PRs for trailing whitespace.  

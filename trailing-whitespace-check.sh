@@ -12,14 +12,18 @@ GREEN='\033[0;32m'
 BLUE='\033[0;36m'
 NC='\033[0m' # No Color 
 
+echo -e "TRAVIS_COMMIT_RANGE = $TRAVIS_COMMIT_RANGE"
+
 # Round up all changed content 
 CHANGED_FILES=($(git diff --name-only $TRAVIS_COMMIT_RANGE)) 
 
 # Show File names that changed 
-echo -e "$BLUE>> Following files were changed in this pull request (commit range: $TRAVIS_COMMIT_RANGE):$NC" 
-echo -e "$GREEN\n$CHANGED_FILES\n$NC" 
+echo -e "$BLUE>> Following files were changed in this pull request (commit range: ${TRAVIS_COMMIT_RANGE}):$NC" 
+echo -e "$GREEN $CHANGED_FILES $NC" 
 
 # Run  
-echo -e "$BLUE>> Run grep ${CHANGED_FILES}:$NC" 
-grep -rn ${CHANGED_FILES}
+echo -e "$BLUE>> Run grep -rln --exclude=\*.{qm,fcstd,png,po,ts} --exclude-dir={3rdParty,zipios++,CXX,.git,} $'\t' ${CHANGED_FILES}:$NC" 
+grep -rln --exclude=\*.{qm,fcstd,png,po,ts} --exclude-dir={3rdParty,zipios++,CXX,.git,} $'\t'${CHANGED_FILES}
 	
+ 
+exit 1;

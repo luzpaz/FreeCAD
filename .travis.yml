@@ -84,6 +84,9 @@ notifications:
     on_start:   change
 
 before_install:
+# Run script to check PRs for trailing whitespace.  
+# Any trailing whitespace will fail the build process  
+- source ${TRAVIS_BUILD_DIR}/trailing-whitespace-check.sh 
 - eval "$(curl -fsSL "https://raw.githubusercontent.com/${OSX_PORTS_CACHE}/v${FREECAD_RELEASE}/travis-helpers.sh")"
 - |
   case "${TRAVIS_OS_NAME}" in

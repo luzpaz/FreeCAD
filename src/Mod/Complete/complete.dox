@@ -1,0 +1,5 @@
+/** \defgroup COMPLETE Complete
+ *  \ingroup CWORKBENCHES 
+ *  \brief Used to hold all commands that were implemented and considered "complete" 
+ *  \deprecated Deprecated in v0.18
+ */

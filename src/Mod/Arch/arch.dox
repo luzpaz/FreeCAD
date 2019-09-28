@@ -1,3 +1,4 @@
 /** \defgroup ARCH Arch
- *  \ingroup PYTHONWORKBENCHES */
-
+ *  \ingroup PYTHONWORKBENCHES
+ *  \brief Architecture Workbench
+ */

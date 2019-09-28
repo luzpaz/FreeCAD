@@ -1,5 +1,4 @@
 /** \defgroup PARTDESIGN PartDesign
- *  \ingroup CWORKBENCHES 
- *  \brief Complete suite of tools to design Parts based on Sketches
+ *  \ingroup CWORKBENCHES
+ *  \brief PartDesign workbench, a complete suite of tools to design Parts based on Sketches
  */
-

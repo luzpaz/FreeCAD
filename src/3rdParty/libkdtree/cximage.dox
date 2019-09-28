@@ -1,0 +1,5 @@
+/**
+   \defgroup CXIMAGE cximage
+   \ingroup EMBEDDED
+   \brief CxImage is only used to generate Windows thumbnails
+ */

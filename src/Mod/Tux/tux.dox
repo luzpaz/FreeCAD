@@ -1,0 +1,4 @@
+/** \defgroup Tux tux
+ *  \ingroup UTILITIES
+ *  \brief Addons that have been integrated in to core
+ */

@@ -1,6 +1,5 @@
 /**
    \defgroup SMESH Salome SMESH
    \ingroup EMBEDDED
-   \brief The Salome SMESH module is used in Fem and Mesh workbenches
-
+   \brief The Salome SMESH module is used in FEM and Mesh workbenches
  */

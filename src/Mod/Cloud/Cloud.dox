@@ -1,3 +1,4 @@
-/** \defgroup TEMPLATE Cloud
- *  \ingroup WORKBENCHES */
-
+/** \defgroup CLOUD Cloud
+ *  \ingroup UTILITIES
+ *  \brief Interfacing FreeCAD with online storage solutions
+ */

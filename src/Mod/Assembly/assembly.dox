@@ -1,3 +1,5 @@
 /** \defgroup ASSEMBLY Assembly
- *  \ingroup WORKBENCHES */
-
+ *  \ingroup WORKBENCHES 
+ *  \brief Assembly Workbench (deprecated in favor of Assembly2+ or Assembly3 Workbenches)
+ *  \deprecated This workbench was deprecated in v0.16
+ */

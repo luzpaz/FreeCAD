@@ -1,3 +1,4 @@
-/** \defgroup TEMPLATE Inspection
- *  \ingroup CWORKBENCHES */
-
+/** \defgroup INSPECTION Inspection
+ *  \ingroup CWORKBENCHES 
+ *  \brief Inspection Workbench
+ */

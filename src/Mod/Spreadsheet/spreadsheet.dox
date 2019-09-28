@@ -1,5 +1,4 @@
-/** \defgroup IMAGE Image
- *  \ingroup CWORKBENCHES 
- *  \brief Tools to work with spreadsheets
+/** \defgroup SPREADSHEET Spreadsheet
+ *  \ingroup CWORKBENCHES
+ *  \brief Tools to work with spreadsheets and expressions
  */
-

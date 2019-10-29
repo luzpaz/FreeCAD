@@ -35,7 +35,7 @@
       <bool>true</bool>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The &lt;a href=&quot;https://www.freecadweb.org/wiki/Test_Framework_Workbench&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Test Framework Workbench &lt;/span&gt;&lt;/a&gt;sole function is to run unit tests for FreeCAD. Since this is a cross-platform application we always appreciate hearing if any testing result in any failures or problems. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The &lt;a href=&quot;https://www.freecadweb.org/wiki/Test_Framework_Workbench&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Test Framework Workbench &lt;/span&gt;&lt;/a&gt;sole function is to run unit tests for FreeCAD. Since this is a cross-platform application we always appreciate hearing from users if any of their tests result in any failures or problems.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="wordWrap">
       <bool>true</bool>

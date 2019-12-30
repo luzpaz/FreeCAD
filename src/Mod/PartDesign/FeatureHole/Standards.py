@@ -1,5 +1,5 @@
 # -*- coding: iso-8859-15 -*-
-#/******************************************************************************
+# ******************************************************************************
 # * Copyright (c) 2012 Jan Rheinländer <jrheinlaender@users.sourceforge.net>   *
 # *                                                                            *
 # * This file is part of the FreeCAD CAx development system.                   *
@@ -19,7 +19,7 @@
 # * write to the Free Software Foundation, Inc., 59 Temple Place,              *
 # * Suite 330, Boston, MA 02111-1307, USA                                      *
 # *                                                                            *
-# ******************************************************************************/
+# ******************************************************************************
 
 import FreeCAD
 

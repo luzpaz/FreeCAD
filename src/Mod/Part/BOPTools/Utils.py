@@ -18,11 +18,11 @@
 # *   write to the Free Software Foundation, Inc., 59 Temple Place,         *
 # *   Suite 330, Boston, MA  02111-1307, USA                                *
 # *                                                                         *
-# ***************************************************************************/
+# ***************************************************************************
 
 __title__="BOPTools.Utils module"
 __author__ = "DeepSOIC"
-__url__ = "http://www.freecadweb.org"
+__url__ = "https://www.freecadweb.org"
 __doc__ = "Utility code, used by various modules of BOPTools."
 
 class HashableShape(object):

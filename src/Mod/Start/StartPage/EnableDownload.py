@@ -1,7 +1,5 @@
 #***************************************************************************
-#*                                                                         *
-#*   Copyright (c) 2012                                                    * 
-#*   Yorik van Havre <yorik@uncreated.net>                                 * 
+#*   Copyright (c) 2012 Yorik van Havre <yorik@uncreated.net>              * 
 #*                                                                         *
 #*   This program is free software; you can redistribute it and/or modify  *
 #*   it under the terms of the GNU Lesser General Public License (LGPL)    *
@@ -21,6 +19,7 @@
 #*                                                                         *
 #***************************************************************************
 
-import FreeCAD,FreeCADGui
+import FreeCAD, FreeCADGui
+
 rf=FreeCAD.ParamGet("User parameter:BaseApp/Preferences/Mod/Start")
 rf.SetBool("AllowDownload",True)

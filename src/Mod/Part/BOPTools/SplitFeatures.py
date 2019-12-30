@@ -1,4 +1,4 @@
-#/***************************************************************************
+# ***************************************************************************
 # *   Copyright (c) 2016 Victor Titov (DeepSOIC) <vv.titov@gmail.com>       *
 # *                                                                         *
 # *   This file is part of the FreeCAD CAx development system.              *
@@ -18,11 +18,11 @@
 # *   write to the Free Software Foundation, Inc., 59 Temple Place,         *
 # *   Suite 330, Boston, MA  02111-1307, USA                                *
 # *                                                                         *
-# ***************************************************************************/
+# ***************************************************************************
 
 __title__="BOPTools.SplitFeatures module"
 __author__ = "DeepSOIC"
-__url__ = "http://www.freecadweb.org"
+__url__ = "https://www.freecadweb.org"
 __doc__ = "Shape splitting document objects (features)."
 
 from . import SplitAPI

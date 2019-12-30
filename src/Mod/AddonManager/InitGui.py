@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # AddonManager gui init module
-# (c) 2001 Juergen Riegel
+# (c) 2001 Jürgen Riegel
 # License LGPL
 
 import AddonManager

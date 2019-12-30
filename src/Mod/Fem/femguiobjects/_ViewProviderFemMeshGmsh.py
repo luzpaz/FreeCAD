@@ -21,7 +21,7 @@
 
 __title__ = "FreeCAD FEM mesh gmsh ViewProvider for the document object"
 __author__ = "Bernd Hahnebach"
-__url__ = "http://www.freecadweb.org"
+__url__ = "https://www.freecadweb.org"
 
 ## @package ViewProviderFemMeshGmsh
 #  \ingroup FEM

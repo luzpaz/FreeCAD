@@ -1,5 +1,5 @@
 # ***************************************************************************
-# *   (c) Qingfeng Xia 2017                       *
+# *   Copyright (c) 2017 Qingfeng Xia <FreeCAD@iesensor.com>                *
 # *                                                                         *
 # *   This file is part of the FreeCAD CAx development system.              *
 # *                                                                         *
@@ -19,12 +19,11 @@
 # *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
 # *   USA                                                                   *
 # *                                                                         *
-# *   Juergen Riegel 2002                                                   *
-# ***************************************************************************/
+# ***************************************************************************
 
 __title__ = "FreeCAD Result import and export VTK file library"
 __author__ = "Qingfeng Xia, Bernd Hahnebach"
-__url__ = "http://www.freecadweb.org"
+__url__ = "https://www.freecadweb.org"
 
 ## @package importVTKResults
 #  \ingroup FEM

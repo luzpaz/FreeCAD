@@ -1,5 +1,5 @@
 #***************************************************************************
-#*   (c) Milos Koutny (milos.koutny@gmail.com) 2012                        *
+#*   Copyright (c) 2012 Milos Koutny <milos.koutny@gmail.com>              *
 #*                                                                         *
 #*   This file is part of the FreeCAD CAx development system.              *
 #*                                                                         *
@@ -19,8 +19,7 @@
 #*   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
 #*   USA                                                                   *
 #*                                                                         *
-#*   Milos Koutny 2010                                                     *
-#***************************************************************************/
+#***************************************************************************
 
 import FreeCAD, Part, os, FreeCADGui
 from FreeCAD import Base

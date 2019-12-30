@@ -91,9 +91,9 @@ CmdApproxPlane::CmdApproxPlane()
   : Command("Reen_ApproxPlane")
 {
     sAppModule      = "Reen";
-    sGroup          = QT_TR_NOOP("Reverse Engineering");
-    sMenuText       = QT_TR_NOOP("Approximate plane...");
-    sToolTipText    = QT_TR_NOOP("Approximate a plane");
+    sGroup          = QT_TR_NOOP("Reen_ApproxPlane", "Reverse Engineering");
+    sMenuText       = QT_TR_NOOP("Reen_ApproxPlane", "Approximate plane...");
+    sToolTipText    = QT_TR_NOOP("Reen_ApproxPlane", "Approximate a plane");
     sWhatsThis      = "Reen_ApproxPlane";
     sStatusTip      = sToolTipText;
 }
@@ -205,8 +205,8 @@ void CmdPoissonReconstruction::activated(int)
     std::vector<App::DocumentObject*> obj = Gui::Selection().getObjectsOfType(Points::Feature::getClassTypeId());
     if (obj.size() != 1) {
         QMessageBox::warning(Gui::getMainWindow(),
-            qApp->translate("Reen_ApproxSurface", "Wrong selection"),
-            qApp->translate("Reen_ApproxSurface", "Please select a single point cloud.")
+            qApp->translate("Reen_PoissonReconstruction", "Wrong selection"),
+            qApp->translate("Reen_PoissonReconstruction", "Please select a single point cloud.")
         );
         return;
     }
@@ -226,10 +226,10 @@ CmdViewTriangulation::CmdViewTriangulation()
   : Command("Reen_ViewTriangulation")
 {
     sAppModule      = "Reen";
-    sGroup          = QT_TR_NOOP("Reverse Engineering");
-    sMenuText       = QT_TR_NOOP("Structured point clouds");
-    sToolTipText    = QT_TR_NOOP("Triangulation of structured point clouds");
-    sStatusTip      = QT_TR_NOOP("Triangulation of structured point clouds");
+    sGroup          = QT_TR_NOOP("Reen_ViewTriangulation", "Reverse Engineering");
+    sMenuText       = QT_TR_NOOP("Reen_ViewTriangulation", "Structured point clouds");
+    sToolTipText    = QT_TR_NOOP("Reen_ViewTriangulation", "Triangulation of structured point clouds");
+    sStatusTip      = QT_TR_NOOP("Reen_ViewTriangulation", "Triangulation of structured point clouds");
     sWhatsThis      = "Reen_ViewTriangulation";
 }
 

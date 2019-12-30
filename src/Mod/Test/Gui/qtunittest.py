@@ -1,9 +1,8 @@
 # Qt Unit test module
 # (c) 2006 Werner Mayer
-#
 
 #***************************************************************************
-#*   (c) Werner Mayer <werner.wm.mayer@gmx.de> 2006                        *
+#*   Copyright (c) 2006 Werner Mayer <werner.wm.mayer@gmx.de>              *
 #*                                                                         *
 #*   This file is part of the FreeCAD CAx development system.              *
 #*                                                                         *
@@ -23,8 +22,7 @@
 #*   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
 #*   USA                                                                   *
 #*                                                                         *
-#*   Werner Mayer 2006                                                     *
-#***************************************************************************/
+#***************************************************************************
 
 __author__ = "Werner Mayer (werner.wm.mayer@gmx.de)"
 

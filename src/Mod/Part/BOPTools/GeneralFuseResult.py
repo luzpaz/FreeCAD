@@ -18,11 +18,11 @@
 # *   write to the Free Software Foundation, Inc., 59 Temple Place,         *
 # *   Suite 330, Boston, MA  02111-1307, USA                                *
 # *                                                                         *
-# ***************************************************************************/
+# ***************************************************************************
 
 __title__="BOPTools.GeneralFuseResult module"
 __author__ = "DeepSOIC"
-__url__ = "http://www.freecadweb.org"
+__url__ = "https://www.freecadweb.org"
 __doc__ = "Implementation of GeneralFuseResult class, which parses return of generalFuse."
 
 import Part

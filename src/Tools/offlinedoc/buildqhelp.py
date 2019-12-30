@@ -2,7 +2,7 @@
 
 #***************************************************************************
 #*                                                                         *
-#*   Copyright (c) 2009 Yorik van Havre <yorik@uncreated.net>              *  
+#*   Copyright (c) 2009 Yorik van Havre <yorik@uncreated.net>              *
 #*                                                                         *
 #*   This program is free software; you can redistribute it and/or modify  *
 #*   it under the terms of the GNU Lesser General Public License (LGPL)    *
@@ -22,12 +22,12 @@
 #*                                                                         *
 #***************************************************************************
 
-__title__="wiki2qhelp"
+__title__= "wiki2qhelp"
 __author__ = "Yorik van Havre <yorik@uncreated.net>"
-__url__ = "http://www.freecadweb.org"
+__url__ = "https://www.freecadweb.org"
 
 """
-This script builds qhrlp files from a local copy of the wiki
+This script builds qhelp files from a local copy of the wiki
 """
 
 import sys, os, re, tempfile, getopt, shutil

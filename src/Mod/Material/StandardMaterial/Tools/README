@@ -9,9 +9,9 @@ a matter of copying a row, changing file names and relevant properties.
 
 Typical workflow:
 
-1. Run ./make_ods.sh to create Materials.ods
+1. Run `./make_ods.sh` to create Materials.ods
 2. Edit Materials.ods
-4. Run ./make_FCMats.sh to create directory with new FCMat files
+4. Run `./make_FCMats.sh` to create directory with new FCMat files
 5. Copy edited FCMat files to StandardMaterials directory
 
 Other scenarios:
@@ -19,8 +19,8 @@ Other scenarios:
 A. Removing a property
 
 1. Remove the property from headers file and from the TEMPLATE.FCMat file
-2. Run ./make_ods.sh to create Materials.ods
-3. Run ./make_FCMats.sh to create directory with new FCMat files
+2. Run `./make_ods.sh` to create Materials.ods
+3. Run `./make_FCMats.sh` to create directory with new FCMat files
 4. Copy FCMat files to StandardMaterials directory
 
 B. Adding a property

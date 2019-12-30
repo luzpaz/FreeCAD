@@ -1,4 +1,4 @@
-#/***************************************************************************
+# ***************************************************************************
 # *   Copyright (c) 2016 Victor Titov (DeepSOIC) <vv.titov@gmail.com>       *
 # *                                                                         *
 # *   This file is part of the FreeCAD CAx development system.              *
@@ -18,10 +18,10 @@
 # *   write to the Free Software Foundation, Inc., 59 Temple Place,         *
 # *   Suite 330, Boston, MA  02111-1307, USA                                *
 # *                                                                         *
-# ***************************************************************************/
+# ***************************************************************************
 
 __title__ = "BOPTools package"
-__url__ = "http://www.freecadweb.org"
+__url__ = "https://www.freecadweb.org"
 __doc__ = """BOPTools Package (part of FreeCAD). Routines that power Connect, Embed, Cutout,
 BooleanFragments, Slice and XOR features of Part Workbench. Useful for other custom
 BOP-like operations"""

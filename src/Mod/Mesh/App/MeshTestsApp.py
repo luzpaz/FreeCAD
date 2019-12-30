@@ -1,8 +1,24 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
-#  Copyright (c) 2007 Jürgen Riegel <juergen.riegel@web.de>
-#  LGPL
+#***************************************************************************
+#*   Copyright (c) 2007 Jürgen Riegel <juergen.riegel@web.de>              *
+#*                                                                         *
+#*   This library is free software; you can redistribute it and/or         *
+#*   modify it under the terms of the GNU Library General Public           *
+#*   License as published by the Free Software Foundation; either          *
+#*   version 2 of the License, or (at your option) any later version.      *
+#*                                                                         *
+#*   This library  is distributed in the hope that it will be useful,      *
+#*   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+#*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+#*   GNU Library General Public License for more details.                  *
+#*                                                                         *
+#*   You should have received a copy of the GNU Library General Public     *
+#*   License along with this library; see the file COPYING.LIB. If not,    *
+#*   write to the Free Software Foundation, Inc., 59 Temple Place,         *
+#*   Suite 330, Boston, MA  02111-1307, USA                                *
+#*                                                                         *
+#***************************************************************************
 
 import FreeCAD, os, sys, unittest, Mesh
 import time, tempfile, math
@@ -19,119 +35,119 @@ except:
 
 
 class MeshTopoTestCases(unittest.TestCase):
-	def setUp(self):
-		# set up a planar face with 18 triangles
-		self.planarMesh = []
-		for x in range(3):
-			for y in range(3):
-				self.planarMesh.append( [0.0 + x, 0.0 + y,0.0000] ) 
-				self.planarMesh.append( [1.0 + x, 1.0 + y,0.0000] )
-				self.planarMesh.append( [0.0 + x, 1.0 + y,0.0000] )
-				self.planarMesh.append( [0.0 + x, 0.0 + y,0.0000] )
-				self.planarMesh.append( [1.0 + x, 0.0 + y,0.0000] )
-				self.planarMesh.append( [1.0 + x, 1.0 + y,0.0000] )
+    def setUp(self):
+        # set up a planar face with 18 triangles
+        self.planarMesh = []
+        for x in range(3):
+            for y in range(3):
+                self.planarMesh.append( [0.0 + x, 0.0 + y,0.0000] )
+                self.planarMesh.append( [1.0 + x, 1.0 + y,0.0000] )
+                self.planarMesh.append( [0.0 + x, 1.0 + y,0.0000] )
+                self.planarMesh.append( [0.0 + x, 0.0 + y,0.0000] )
+                self.planarMesh.append( [1.0 + x, 0.0 + y,0.0000] )
+                self.planarMesh.append( [1.0 + x, 1.0 + y,0.0000] )
 
 
-	def testCollapseFacetsSingle(self):
-		for i in range(18):
-			planarMeshObject = Mesh.Mesh(self.planarMesh)
-			planarMeshObject.collapseFacets([i])
+    def testCollapseFacetsSingle(self):
+        for i in range(18):
+            planarMeshObject = Mesh.Mesh(self.planarMesh)
+            planarMeshObject.collapseFacets([i])
 
-	def testCollapseFacetsMultible(self):
-		planarMeshObject = Mesh.Mesh(self.planarMesh)
-		planarMeshObject.collapseFacets(range(7))
+    def testCollapseFacetsMultible(self):
+        planarMeshObject = Mesh.Mesh(self.planarMesh)
+        planarMeshObject.collapseFacets(range(7))
 
-	def testCollapseFacetsAll(self):
-		planarMeshObject = Mesh.Mesh(self.planarMesh)
-		planarMeshObject.collapseFacets(range(18))
+    def testCollapseFacetsAll(self):
+        planarMeshObject = Mesh.Mesh(self.planarMesh)
+        planarMeshObject.collapseFacets(range(18))
 
 
 class MeshGeoTestCases(unittest.TestCase):
-	def setUp(self):
-		# set up a planar face with 2 triangles
-		self.planarMesh = []
+    def setUp(self):
+        # set up a planar face with 2 triangles
+        self.planarMesh = []
 
 
-	def testIntersection(self):
-		self.planarMesh.append( [0.9961,1.5413,4.3943] ) 
-		self.planarMesh.append( [9.4796,10.024,-3.0937] )
-		self.planarMesh.append( [1.4308,11.3841,2.6829] )
-		self.planarMesh.append( [2.6493,2.2536,3.0679] )
-		self.planarMesh.append( [13.1126,0.4857,-4.4417] )
-		self.planarMesh.append( [10.2410,8.9040,-3.5002] )
-		planarMeshObject = Mesh.Mesh(self.planarMesh)
-		f1 = planarMeshObject.Facets[0]
-		f2 = planarMeshObject.Facets[1]
-		res=f1.intersect(f2)
-		self.failUnless(len(res) == 0)
+    def testIntersection(self):
+        self.planarMesh.append( [0.9961,1.5413,4.3943] ) 
+        self.planarMesh.append( [9.4796,10.024,-3.0937] )
+        self.planarMesh.append( [1.4308,11.3841,2.6829] )
+        self.planarMesh.append( [2.6493,2.2536,3.0679] )
+        self.planarMesh.append( [13.1126,0.4857,-4.4417] )
+        self.planarMesh.append( [10.2410,8.9040,-3.5002] )
+        planarMeshObject = Mesh.Mesh(self.planarMesh)
+        f1 = planarMeshObject.Facets[0]
+        f2 = planarMeshObject.Facets[1]
+        res=f1.intersect(f2)
+        self.failUnless(len(res) == 0)
 
 
-	def testIntersection2(self):
-		self.planarMesh.append( [-16.097176,-29.891157,15.987688] ) 
-		self.planarMesh.append( [-16.176304,-29.859991,15.947966] )
-		self.planarMesh.append( [-16.071451,-29.900553,15.912505] )
-		self.planarMesh.append( [-16.092241,-29.893408,16.020439] )
-		self.planarMesh.append( [-16.007210,-29.926180,15.967641] )
-		self.planarMesh.append( [-16.064457,-29.904951,16.090832] )
-		planarMeshObject = Mesh.Mesh(self.planarMesh)
-		f1 = planarMeshObject.Facets[0]
-		f2 = planarMeshObject.Facets[1]
-		# does definitely NOT intersect
-		res=f1.intersect(f2)
-		self.failUnless(len(res) == 0)
+    def testIntersection2(self):
+        self.planarMesh.append( [-16.097176,-29.891157,15.987688] ) 
+        self.planarMesh.append( [-16.176304,-29.859991,15.947966] )
+        self.planarMesh.append( [-16.071451,-29.900553,15.912505] )
+        self.planarMesh.append( [-16.092241,-29.893408,16.020439] )
+        self.planarMesh.append( [-16.007210,-29.926180,15.967641] )
+        self.planarMesh.append( [-16.064457,-29.904951,16.090832] )
+        planarMeshObject = Mesh.Mesh(self.planarMesh)
+        f1 = planarMeshObject.Facets[0]
+        f2 = planarMeshObject.Facets[1]
+        # does definitely NOT intersect
+        res=f1.intersect(f2)
+        self.failUnless(len(res) == 0)
 
 class PivyTestCases(unittest.TestCase):
-	def setUp(self):
-		# set up a planar face with 2 triangles
-		self.planarMesh = []
-		FreeCAD.newDocument("MeshTest")
+    def setUp(self):
+        # set up a planar face with 2 triangles
+        self.planarMesh = []
+        FreeCAD.newDocument("MeshTest")
 
-	def testRayPick(self):
-		if not FreeCAD.GuiUp:
-			return
-		self.planarMesh.append( [-16.097176,-29.891157,15.987688] ) 
-		self.planarMesh.append( [-16.176304,-29.859991,15.947966] )
-		self.planarMesh.append( [-16.071451,-29.900553,15.912505] )
-		self.planarMesh.append( [-16.092241,-29.893408,16.020439] )
-		self.planarMesh.append( [-16.007210,-29.926180,15.967641] )
-		self.planarMesh.append( [-16.064457,-29.904951,16.090832] )
-		planarMeshObject = Mesh.Mesh(self.planarMesh)
+    def testRayPick(self):
+        if not FreeCAD.GuiUp:
+            return
+        self.planarMesh.append( [-16.097176,-29.891157,15.987688] ) 
+        self.planarMesh.append( [-16.176304,-29.859991,15.947966] )
+        self.planarMesh.append( [-16.071451,-29.900553,15.912505] )
+        self.planarMesh.append( [-16.092241,-29.893408,16.020439] )
+        self.planarMesh.append( [-16.007210,-29.926180,15.967641] )
+        self.planarMesh.append( [-16.064457,-29.904951,16.090832] )
+        planarMeshObject = Mesh.Mesh(self.planarMesh)
 
-		from pivy import coin; import FreeCADGui
-		Mesh.show(planarMeshObject)
-		view=FreeCADGui.ActiveDocument.ActiveView.getViewer()
-		rp=coin.SoRayPickAction(view.getSoRenderManager().getViewportRegion())
-		rp.setRay(coin.SbVec3f(-16.05,16.0,16.0),coin.SbVec3f(0,-1,0))
-		rp.apply(view.getSoRenderManager().getSceneGraph())
-		pp=rp.getPickedPoint()
-		self.failUnless(pp != None)
-		det=pp.getDetail()
-		self.failUnless(det.getTypeId() == coin.SoFaceDetail.getClassTypeId())
-		det=coin.cast(det,str(det.getTypeId().getName()))
-		self.failUnless(det.getFaceIndex() == 1)
+        from pivy import coin; import FreeCADGui
+        Mesh.show(planarMeshObject)
+        view=FreeCADGui.ActiveDocument.ActiveView.getViewer()
+        rp=coin.SoRayPickAction(view.getSoRenderManager().getViewportRegion())
+        rp.setRay(coin.SbVec3f(-16.05,16.0,16.0),coin.SbVec3f(0,-1,0))
+        rp.apply(view.getSoRenderManager().getSceneGraph())
+        pp=rp.getPickedPoint()
+        self.failUnless(pp != None)
+        det=pp.getDetail()
+        self.failUnless(det.getTypeId() == coin.SoFaceDetail.getClassTypeId())
+        det=coin.cast(det,str(det.getTypeId().getName()))
+        self.failUnless(det.getFaceIndex() == 1)
 
-	def testPrimitiveCount(self):
-		if not FreeCAD.GuiUp:
-			return
-		self.planarMesh.append( [-16.097176,-29.891157,15.987688] ) 
-		self.planarMesh.append( [-16.176304,-29.859991,15.947966] )
-		self.planarMesh.append( [-16.071451,-29.900553,15.912505] )
-		self.planarMesh.append( [-16.092241,-29.893408,16.020439] )
-		self.planarMesh.append( [-16.007210,-29.926180,15.967641] )
-		self.planarMesh.append( [-16.064457,-29.904951,16.090832] )
-		planarMeshObject = Mesh.Mesh(self.planarMesh)
+    def testPrimitiveCount(self):
+        if not FreeCAD.GuiUp:
+            return
+        self.planarMesh.append( [-16.097176,-29.891157,15.987688] ) 
+        self.planarMesh.append( [-16.176304,-29.859991,15.947966] )
+        self.planarMesh.append( [-16.071451,-29.900553,15.912505] )
+        self.planarMesh.append( [-16.092241,-29.893408,16.020439] )
+        self.planarMesh.append( [-16.007210,-29.926180,15.967641] )
+        self.planarMesh.append( [-16.064457,-29.904951,16.090832] )
+        planarMeshObject = Mesh.Mesh(self.planarMesh)
 
-		from pivy import coin; import FreeCADGui
-		Mesh.show(planarMeshObject)
-		view=FreeCADGui.ActiveDocument.ActiveView
-		pc=coin.SoGetPrimitiveCountAction()
-		pc.apply(view.getSceneGraph())
-		self.failUnless(pc.getTriangleCount() == 2)
-		#self.failUnless(pc.getPointCount() == 6)
+        from pivy import coin; import FreeCADGui
+        Mesh.show(planarMeshObject)
+        view=FreeCADGui.ActiveDocument.ActiveView
+        pc=coin.SoGetPrimitiveCountAction()
+        pc.apply(view.getSceneGraph())
+        self.failUnless(pc.getTriangleCount() == 2)
+        #self.failUnless(pc.getPointCount() == 6)
 
-	def tearDown(self):
-		#closing doc
-		FreeCAD.closeDocument("MeshTest")
+    def tearDown(self):
+        #closing doc
+        FreeCAD.closeDocument("MeshTest")
 
 # Threads
 

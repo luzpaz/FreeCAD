@@ -213,12 +213,12 @@ public:
     //**************************************************************************
     // checking on the state
 
-    /// Test if it handels something
+    /// Test if it handles something
     bool IsValid(void) const {
         return _pHandels!=0;
     }
 
-    /// Test if it not handels something
+    /// Test if it doesn't handle (handles) something
     bool IsNull(void) const {
         return _pHandels==0;
     }

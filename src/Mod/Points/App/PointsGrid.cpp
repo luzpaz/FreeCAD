@@ -128,12 +128,12 @@ void PointsGrid::InitGrid (void)
 
   unsigned long i, j;
 
-  // Grid Laengen berechnen wenn nicht initialisiert
+  // Calculate grid lengths if not initialized
   //
   if ((_ulCtGridsX == 0) || (_ulCtGridsY == 0) || (_ulCtGridsZ == 0))
     CalculateGridLength(POINTS_CT_GRID, POINTS_MAX_GRIDS);
 
-  // Grid Laengen und Offset bestimmen
+  // Determine grid lengths and offset
   //
   {
   Base::BoundBox3d clBBPts;// = _pclPoints->GetBoundBox();
@@ -162,7 +162,7 @@ void PointsGrid::InitGrid (void)
   }
   }
 
-  // Daten-Struktur anlegen
+  // Create data structure
   _aulGrid.clear();
   _aulGrid.resize(_ulCtGridsX);
   for (i = 0; i < _ulCtGridsX; i++)
@@ -179,7 +179,7 @@ unsigned long PointsGrid::InSide (const Base::BoundBox3d &rclBB, std::vector<uns
   
   raulElements.clear();
 
-  // Grid-Boxen zur naehreren Auswahl
+  // Grid boxes for closer selection
   Position(Base::Vector3d(rclBB.MinX, rclBB.MinY, rclBB.MinZ), ulMinX, ulMinY, ulMinZ);
   Position(Base::Vector3d(rclBB.MaxX, rclBB.MaxY, rclBB.MaxZ), ulMaxX, ulMaxY, ulMaxZ);
 
@@ -196,7 +196,7 @@ unsigned long PointsGrid::InSide (const Base::BoundBox3d &rclBB, std::vector<uns
 
   if (bDelDoubles == true)
   {
-    // doppelte Nennungen entfernen
+    // Remove duplicate entries
     std::sort(raulElements.begin(), raulElements.end());
     raulElements.erase(std::unique(raulElements.begin(), raulElements.end()), raulElements.end());  
   }
@@ -212,7 +212,7 @@ unsigned long PointsGrid::InSide (const Base::BoundBox3d &rclBB, std::vector<uns
 
   raulElements.clear();
 
-  // Grid-Boxen zur naehreren Auswahl
+  // Grid boxes for closer selection
   Position(Base::Vector3d(rclBB.MinX, rclBB.MinY, rclBB.MinZ), ulMinX, ulMinY, ulMinZ);
   Position(Base::Vector3d(rclBB.MaxX, rclBB.MaxY, rclBB.MaxZ), ulMaxX, ulMaxY, ulMaxZ);
 
@@ -230,7 +230,7 @@ unsigned long PointsGrid::InSide (const Base::BoundBox3d &rclBB, std::vector<uns
 
   if (bDelDoubles == true)
   {
-    // doppelte Nennungen entfernen
+    // Remove duplicate entries
     std::sort(raulElements.begin(), raulElements.end());
     raulElements.erase(std::unique(raulElements.begin(), raulElements.end()), raulElements.end());  
   }
@@ -244,7 +244,7 @@ unsigned long PointsGrid::InSide (const Base::BoundBox3d &rclBB, std::set<unsign
   
   raulElements.clear();
 
-  // Grid-Boxen zur naehreren Auswahl
+  // Grid boxes for more detailed grid selection
   Position(Base::Vector3d(rclBB.MinX, rclBB.MinY, rclBB.MinZ), ulMinX, ulMinY, ulMinZ);
   Position(Base::Vector3d(rclBB.MaxX, rclBB.MaxY, rclBB.MaxZ), ulMaxX, ulMaxY, ulMaxZ);
 
@@ -282,9 +282,9 @@ void PointsGrid::Position (const Base::Vector3d &rclPoint, unsigned long &rulX, 
 
 void PointsGrid::CalculateGridLength (unsigned long ulCtGrid, unsigned long ulMaxGrids)
 {
-    // Grid Laengen bzw. Anzahl der Grids pro Dimension berechnen
-    // pro Grid sollen ca. 10 (?!?!) Facets liegen
-    // bzw. max Grids sollten 10000 nicht ueberschreiten
+  // calculate grid lengths or number of grids per dimension
+  // there should be about 10 (?!?!) facets per grid
+  // or max grids should not exceed 10000
     Base::BoundBox3d clBBPtsEnlarged;// = _pclPoints->GetBoundBox();
     for (PointKernel::const_iterator it = _pclPoints->begin(); it != _pclPoints->end(); ++it )
         clBBPtsEnlarged.Add(*it);
@@ -319,9 +319,9 @@ void PointsGrid::CalculateGridLength (int iCtGridPerAxis)
     return;
   }
 
-  // Grid Laengen bzw. Anzahl der Grids pro Dimension berechnen
-  // pro Grid sollen ca. 10 (?!?!) Facets liegen
-  // bzw. max Grids sollten 10000 nicht ueberschreiten
+  // calculate grid lengths or number of grids per dimension
+  // there should be about 10 (?!?!) facets per grid
+  // or max grids should not exceed 10000
   Base::BoundBox3d clBBPts;// = _pclPoints->GetBoundBox();
   for (PointKernel::const_iterator it = _pclPoints->begin(); it != _pclPoints->end(); ++it )
     clBBPts.Add(*it);
@@ -683,7 +683,7 @@ void PointsGrid::RebuildGrid (void)
 
   InitGrid();
  
-  // Daten-Struktur fuellen
+  // Fill data structure
 
   unsigned long i = 0;
   for (PointKernel::const_iterator it = _pclPoints->begin(); it != _pclPoints->end(); ++it )
@@ -747,9 +747,9 @@ bool PointsGridIterator::InitOnRay (const Base::Vector3d &rclPt, const Base::Vec
   _clDir     = rclDir;
   _bValidRay = false;
 
-  // liegt Punkt innerhalb globalen BB
+  // lies within global BB
   if ((_rclGrid.GetBoundBox().IsInBox(rclPt)) == true)
-  {  // Voxel bestimmen, indem der Startpunkt liegt
+  {  // Determine voxels by having the starting point
     _rclGrid.Position(rclPt, _ulX, _ulY, _ulZ);
     raulElements.insert(raulElements.end(), _rclGrid._aulGrid[_ulX][_ulY][_ulZ].begin(), _rclGrid._aulGrid[_ulX][_ulY][_ulZ].end());
     _bValidRay = true;

@@ -1,4 +1,5 @@
-# (c) 2014 David Douard <david.douard@gmail.com>
+##########################################################################
+#   Copyright (c) 2014 David Douard <david.douard@gmail.com>
 #
 #   This program is free software; you can redistribute it and/or modify
 #   it under the terms of the GNU Lesser General Public License (LGPL)
@@ -14,6 +15,8 @@
 #   You should have received a copy of the GNU Library General Public
 #   License along with FCGear; if not, write to the Free Software
 #   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307
+#
+##########################################################################
 
 import itertools
 from math import cos, sin

@@ -6,7 +6,7 @@
 # runs when the gui is up
 
 #***************************************************************************
-#*   Copyright (c) 2002 Jürgen Riegel <juergen.riegel@web.de>             *
+#*   Copyright (c) 2002 Jürgen Riegel <juergen.riegel@web.de>              *
 #*                                                                         *
 #*   This file is part of the FreeCAD CAx development system.              *
 #*                                                                         *
@@ -26,7 +26,7 @@
 #*   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
 #*   USA                                                                   *
 #*                                                                         *
-#***************************************************************************/
+#***************************************************************************
 
 
 

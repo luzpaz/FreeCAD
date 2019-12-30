@@ -21,7 +21,7 @@
 
 __title__ = "material cards utilities"
 __author__ = "Bernd Hahnebach"
-__url__ = "http://www.freecadweb.org"
+__url__ = "https://www.freecadweb.org"
 
 import os
 import sys

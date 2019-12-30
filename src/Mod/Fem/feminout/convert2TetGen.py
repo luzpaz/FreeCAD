@@ -1,6 +1,5 @@
 # ***************************************************************************
-# *                                                                         *
-# *   Copyright (c) 2010 Juergen Riegel <juergen.riegel@web.de>             *
+# *   Copyright (c) 2010 Jürgen Riegel <juergen.riegel@web.de>              *
 # *   Copyright (c) 2018 Bernd Hahnebach <bernd@bimstatik.org>              *
 # *                                                                         *
 # *   This file is part of the FreeCAD CAx development system.              *
@@ -25,7 +24,7 @@
 
 __title__ = "FreeCAD tetgen exporter"
 __author__ = "Juergen Riegel"
-__url__ = "http://www.freecadweb.org"
+__url__ = "https://www.freecadweb.org"
 
 ## \addtogroup FEM
 #  @{

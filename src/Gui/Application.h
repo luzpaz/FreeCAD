@@ -208,7 +208,7 @@ public:
 
     /** @name Init, Destruct an Access methods */
     //@{
-    /// some kind of singelton
+    /// some kind of singleton
     static Application* Instance;
     static void initApplication(void);
     static void initTypes(void);

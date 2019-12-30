@@ -1,5 +1,5 @@
 # ***************************************************************************
-# *   Copyright (c) 2018 - FreeCAD Developers                               *
+# *   Copyright (c) 2018 FreeCAD Developers                                 *
 # *   Author: Przemo Firszt <przemo@firszt.eu>                              *
 # *   Author: Bernd Hahnebach <bernd@bimstatik.org>                         *
 # *                                                                         *
@@ -21,7 +21,7 @@
 # *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
 # *   USA                                                                   *
 # *                                                                         *
-# ***************************************************************************/
+# ***************************************************************************
 
 
 # Unit test for the FEM module

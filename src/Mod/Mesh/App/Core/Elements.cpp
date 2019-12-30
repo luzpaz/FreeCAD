@@ -169,22 +169,22 @@ MeshFacetArray& MeshFacetArray::operator = (const MeshFacetArray &rclFAry)
 
 bool MeshGeomEdge::ContainedByOrIntersectBoundingBox ( const Base::BoundBox3f &rclBB ) const
 {
-  // Test, ob alle Eckpunkte der Edge sich auf einer der 6 Seiten der BB befinden
+  // Test whether all corner points of the Edge are on one of the 6 sides of the BB
   if ((GetBoundBox() && rclBB) == false)
     return false;
 
-  // Test, ob Edge-BB komplett in BB liegt
+  // Test whether Edge-BB is completely in BB
   if (rclBB.IsInBox(GetBoundBox()))
     return true;
 
-  // Test, ob einer der Eckpunkte in BB liegt
+  // Test whether one of the corner points is in BB
   for (int i=0;i<2;i++)
   {
     if (rclBB.IsInBox(_aclPoints[i]))
       return true;
   }
 
-  // "echter" Test auf Schnitt
+  // "echter" Test auf Schnitt (AKA '"real" test on cut' ?)
   if (IntersectBoundingBox(rclBB))
     return true;
 
@@ -375,7 +375,7 @@ bool MeshGeomFacet::IsPointOf (const Base::Vector3f &rclPoint, float fDistance) 
   clProjPt.ProjectToPlane(_aclPoints[0], clNorm);
 
     
-  // Kante P0 --> P1
+  // Edge P0 --> P1
   clEdge = clP1 - clP0;
   fLP = clProjPt.DistanceToLine(clP0, clEdge); 
   if (fLP > 0.0f)
@@ -390,7 +390,7 @@ bool MeshGeomFacet::IsPointOf (const Base::Vector3f &rclPoint, float fDistance) 
       return false;
   }      
 
-  // Kante P0 --> P2
+  // Edge P0 --> P2
   clEdge = clP2 - clP0;
   fLP = clProjPt.DistanceToLine(clP0, clEdge); 
   if (fLP > 0.0f)
@@ -405,7 +405,7 @@ bool MeshGeomFacet::IsPointOf (const Base::Vector3f &rclPoint, float fDistance) 
       return false;
   }      
 
-  // Kante P1 --> P2
+  // Edge P1 --> P2
   clEdge = clP2 - clP1;
   fLP = clProjPt.DistanceToLine(clP1, clEdge); 
   if (fLP > 0.0f)
@@ -425,7 +425,7 @@ bool MeshGeomFacet::IsPointOf (const Base::Vector3f &rclPoint, float fDistance) 
 
 bool MeshGeomFacet::IsPointOfFace (const Base::Vector3f& rclP, float fDistance) const
 {
-  // effektivere Implementierung als in MeshGeomFacet::IsPointOf
+  // more effective implementation than in MeshGeomFacet::IsPointOf
   //
   Base::Vector3f a(_aclPoints[0].x, _aclPoints[0].y, _aclPoints[0].z);
   Base::Vector3f b(_aclPoints[1].x, _aclPoints[1].y, _aclPoints[1].z);

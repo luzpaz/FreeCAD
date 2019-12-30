@@ -1,6 +1,5 @@
 # ***************************************************************************
-# *                                                                         *
-# *   Copyright (c) 2016 - Victor Titov (DeepSOIC) <vv.titov@gmail.com>     *
+# *   Copyright (c) 2016 Victor Titov (DeepSOIC) <vv.titov@gmail.com>       *
 # *                                                                         *
 # *   This program is free software; you can redistribute it and/or modify  *
 # *   it under the terms of the GNU Lesser General Public License (LGPL)    *
@@ -22,7 +21,7 @@
 
 __title__ = "ImageTools._CommandImageScaling"
 __author__  = "JAndersM"
-__url__     = "http://www.freecadweb.org/index-fr.html"
+__url__     = "https://www.freecadweb.org/"
 __version__ = "00.02"
 __date__    = "03/05/2019" 
  
@@ -40,7 +39,7 @@ if FreeCAD.GuiUp:
 
 # translation-related code
 #(see forum thread "A new Part tool is being born... JoinFeatures!"
-#http://forum.freecadweb.org/viewtopic.php?f=22&t=11112&start=30#p90239 )
+#https://forum.freecadweb.org/viewtopic.php?f=22&t=11112&start=30#p90239 )
     try:
         _fromUtf8 = QtCore.QString.fromUtf8
     except (Exception):

@@ -3,7 +3,7 @@
 #
 
 #***************************************************************************
-#*   (c) Werner Mayer <werner.wm.mayer@gmx.de> 2005                        *
+#*   Copyright (c) 2005 Werner Mayer <werner.wm.mayer@gmx.de>              *
 #*                                                                         *
 #*   This file is part of the FreeCAD CAx development system.              *
 #*                                                                         *
@@ -23,8 +23,7 @@
 #*   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
 #*   USA                                                                   *
 #*                                                                         *
-#*   Werner Mayer 2005                                                     *
-#***************************************************************************/
+#***************************************************************************
 
 import FreeCAD, os, unittest, FreeCADGui
 

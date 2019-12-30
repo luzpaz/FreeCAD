@@ -1,7 +1,6 @@
 # ***************************************************************************
-# *                                                                         *
-# *   Copyright (c) 2013 Joachim Zettler                                    *
-# *   Copyright (c) 2013 Juergen Riegel <FreeCAD@juergen-riegel.net>        *
+# *   Copyright (c) 2013 Joachim Zettler <Joachim.Zettler@gmx.de>           *
+# *   Copyright (c) 2013 Jürgen Riegel <FreeCAD@juergen-riegel.net>         *
 # *   Copyright (c) 2016 Bernd Hahnebach <bernd@bimstatik.org>              *
 # *                                                                         *
 # *   This program is free software; you can redistribute it and/or modify  *
@@ -24,7 +23,7 @@
 
 __title__ = "FreeCAD Calculix library"
 __author__ = "Juergen Riegel , Michael Hindley, Bernd Hahnebach"
-__url__ = "http://www.freecadweb.org"
+__url__ = "https://www.freecadweb.org"
 
 ## @package importCcxFrdResults
 #  \ingroup FEM

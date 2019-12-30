@@ -1,10 +1,10 @@
 # FreeCAD init script of the Spreadsheet module
-# (c) 2001 Juergen Riegel
+# (c) 2001 Jürgen Riegel
 
 #***************************************************************************
-#*   (c) Juergen Riegel (juergen.riegel@web.de) 2002                       *
-#*   Copyright (c) 2013 - Yorik van Havre <yorik@uncreated.net>            *
-#*   Copyright (c) 2013 Eivind Kvedalen (eivind@kvedalen.name)             *
+#*   Copyright (c) 2002 Jürgen Riegel <juergen.riegel@web.de>              *
+#*   Copyright (c) 2013 Yorik van Havre <yorik@uncreated.net>              *
+#*   Copyright (c) 2013 Eivind Kvedalen <eivind@kvedalen.name>             *
 #*                                                                         *
 #*   This file is part of the FreeCAD CAx development system.              *
 #*                                                                         *
@@ -24,9 +24,7 @@
 #*   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
 #*   USA                                                                   *
 #*                                                                         *
-#*   Juergen Riegel 2002                                                   *
-#***************************************************************************/
-
+#***************************************************************************
 
 
 # Get the Parameter Group of this module

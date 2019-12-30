@@ -37,8 +37,8 @@ def translate(context, text, disambig=None):
 class ObjectCustom:
 
     def __init__(self,obj):
-        obj.addProperty("App::PropertyStringList", "Gcode", "Path", QtCore.QT_TRANSLATE_NOOP("PathCustom", "The gcode to be inserted"))
-        obj.addProperty("App::PropertyLink", "ToolController", "Path", QtCore.QT_TRANSLATE_NOOP("PathCustom", "The tool controller that will be used to calculate the path"))
+        obj.addProperty("App::PropertyStringList", "Gcode", "Path", QtCore.QT_TRANSLATE_NOOP("Path_Custom", "The gcode to be inserted"))
+        obj.addProperty("App::PropertyLink", "ToolController", "Path", QtCore.QT_TRANSLATE_NOOP("Path_Custom", "The tool controller that will be used to calculate the path"))
         obj.Proxy = self
 
     def __getstate__(self):

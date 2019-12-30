@@ -1,11 +1,11 @@
-# (c) 2014 David Douard <david.douard@gmail.com>
-# Based on https://github.com/attoparsec/inkscape-extensions.git
-# Based on gearUtils-03.js by Dr A.R.Collins
+#   Copyright (c) 2014 David Douard <david.douard@gmail.com>
+#   Based on https://github.com/attoparsec/inkscape-extensions.git
+#   Based on gearUtils-03.js by Dr A.R.Collins
 #          http://www.arc.id.au/gearDrawing.html
 #
-# Calculation of Bezier coefficients for
-# Higuchi et al. approximation to an involute.
-# ref: YNU Digital Eng Lab Memorandum 05-1
+#   Calculation of Bezier coefficients for
+#   Higuchi et al. approximation to an involute.
+#   ref: YNU Digital Eng Lab Memorandum 05-1
 #
 #   This program is free software; you can redistribute it and/or modify
 #   it under the terms of the GNU Lesser General Public License (LGPL)

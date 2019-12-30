@@ -1,5 +1,4 @@
 # ***************************************************************************
-# *                                                                         *
 # *   Copyright (c) 2016 Frantisek Loeffelmann <LoffF@email.cz>             *
 # *                                                                         *
 # *   This program is free software; you can redistribute it and/or modify  *
@@ -22,7 +21,7 @@
 
 __title__ = "FreeCAD .inp file reader"
 __author__ = "Frantisek Loeffelmann, Bernd Hahnebach"
-__url__ = "http://www.freecadweb.org"
+__url__ = "https://www.freecadweb.org"
 __date__ = "04/08/2016"
 
 ## @package importInpMesh

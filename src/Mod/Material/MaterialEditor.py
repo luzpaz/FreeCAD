@@ -22,7 +22,7 @@
 
 __title__ = "FreeCAD material editor"
 __author__ = "Yorik van Havre, Bernd Hahnebach"
-__url__ = "http://www.freecadweb.org"
+__url__ = "https://www.freecadweb.org"
 
 import os
 import sys

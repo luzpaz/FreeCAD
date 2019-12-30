@@ -1,5 +1,4 @@
 # ***************************************************************************
-# *                                                                         *
 # *   Copyright (c) 2016 Ofentse Kgoa <kgoaot@eskom.co.za>                  *
 # *   Copyright (c) 2018 Bernd Hahnebach <bernd@bimstatik.org>              *
 # *   Based on the FemElementGeometry1D by Bernd Hahnebach                  *
@@ -24,7 +23,7 @@
 
 __title__ = "FreeCAD FEM element fluid 1D ViewProvider for the document object"
 __author__ = "Ofentse Kgoa, Bernd Hahnebach"
-__url__ = "http://www.freecadweb.org"
+__url__ = "https://www.freecadweb.org"
 
 ## @package ViewProviderFemElementFluid1D
 #  \ingroup FEM

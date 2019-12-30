@@ -1,6 +1,5 @@
 # ***************************************************************************
-# *                                                                         *
-# *   Copyright (c) 2013 - Juergen Riegel <FreeCAD@juergen-riegel.net>      *
+# *   Copyright (c) 2013 Jürgen Riegel <FreeCAD@juergen-riegel.net>         *
 # *                                                                         *
 # *   This program is free software; you can redistribute it and/or modify  *
 # *   it under the terms of the GNU Lesser General Public License (LGPL)    *
@@ -30,8 +29,8 @@ if sys.version_info.major >= 3:
 
 
 __title__ = "FreeCAD material card importer"
-__author__ = "Juergen Riegel"
-__url__ = "http://www.freecadweb.org"
+__author__ = "Jürgen Riegel"
+__url__ = "https://www.freecadweb.org"
 
 
 # to distinguish python built-in open function from the one declared below

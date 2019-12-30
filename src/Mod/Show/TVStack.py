@@ -1,6 +1,5 @@
-#/***************************************************************************
-# *   Copyright (c) Victor Titov (DeepSOIC)                                 *
-# *                                           (vv.titov@gmail.com) 2019     *
+# ***************************************************************************
+# *   Copyright (c) 2019 Victor Titov (DeepSOIC) <vv.titov@gmail.com>       *
 # *                                                                         *
 # *   This file is part of the FreeCAD CAx development system.              *
 # *                                                                         *
@@ -19,7 +18,7 @@
 # *   write to the Free Software Foundation, Inc., 59 Temple Place,         *
 # *   Suite 330, Boston, MA  02111-1307, USA                                *
 # *                                                                         *
-# ***************************************************************************/
+# ***************************************************************************
 
 import weakref
 
@@ -29,7 +28,7 @@ class TVStack(object):
     index_LUT = None # Key = id(tempovis_instance). Value = index in the stack.
     stack = None #list of weakrefs to TV instances. Using weakrefs, so that TempoVis can self-destruct if forgotten.
     document = None
-    
+
     _rewind_tv = None
 
     def __init__(self, document):
@@ -90,14 +89,14 @@ class TVStack(object):
                 if tv.has(detail):
                     return (tv, tv.data[detail.full_key])
         return None
-        
+
     def rebuild_index(self, start = 0):
         if start == 0:
             self.index_LUT = {}
         for i in range(start, len(self.stack)):
             self.index_LUT[id(self.stack[i]())] = i
-        
-    
+
+
     def purge_dead(self):
         """removes dead TV instances from the stack"""
         n = 0
@@ -114,7 +113,7 @@ class TVStack(object):
         for ref in self.stack:
             if ref() is not None:
                 ref().forget()
-    
+
     def unwindForSaving(self):
         from . import mTempoVis
 
@@ -127,7 +126,7 @@ class TVStack(object):
                 if not key in details:
                     if detail.affects_persistence:
                         details[detail.full_key] = detail
-        
+
         self._rewind_tv = mTempoVis.TempoVis(self.document, None)
         for key, detail in details.items():
             self._rewind_tv.modify(detail)
@@ -136,17 +135,17 @@ class TVStack(object):
         if self._rewind_tv is not None:
             self._rewind_tv.restore()
             self._rewind_tv = None
-    
+
     def getSplitSequence(self, tv):
         """getSplitSequence(tv): returns (list_before, list_after), neither list includes tv."""
         index = self.index_LUT[id(tv)]
         def deref(lst): 
             return [ref() for ref in lst]
         return deref(self.stack[0:index]), deref(self.stack[index+1:])
-    
+
     def __getitem__(self, index):
         return self.stack[index]()
-    
+
     def __len__(self):
         return len(self.stack)
 
@@ -157,11 +156,11 @@ class TVStack(object):
     def __reversed__(self):
         for ref in reversed(self.stack):
             yield ref()
-    
+
     def restoreAll(self):
         for ref in reversed(self.stack):
             ref().restore()
-    
+
     def byTag(self, tag):
         return [ref() for ref in self.stack if ref().tag == tag]
  
@@ -169,11 +168,11 @@ class TVStack(object):
 def mainStack(document, create_if_missing = True):
     """mainStack(document, create_if_missing = True):returns the main TVStack instance for provided document"""
     docname = document.Name
-    
+
     if create_if_missing:
         if not docname in global_stacks:
             global_stacks[docname] = TVStack(document)
-        
+
     return global_stacks.get(docname, None)
 
 def _slotDeletedDocument(document):

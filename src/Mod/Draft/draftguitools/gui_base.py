@@ -5,9 +5,9 @@
 # \brief This module provides the Base object for all Draft Gui commands.
 
 # ***************************************************************************
-# *   (c) 2009 Yorik van Havre <yorik@uncreated.net>                        *
-# *   (c) 2010 Ken Cline <cline@frii.com>                                   *
-# *   (c) 2019 Eliud Cabrera Castillo <e.cabrera-castillo@tum.de>           *
+# *   Copyright (c) 2009 Yorik van Havre <yorik@uncreated.net>              *
+# *   Copyright (c) 2010 Ken Cline <cline@frii.com>                         *
+# *   Copyright (c) 2019 Eliud Cabrera Castillo <e.cabrera-castillo@tum.de> *
 # *                                                                         *
 # *   This file is part of the FreeCAD CAx development system.              *
 # *                                                                         *

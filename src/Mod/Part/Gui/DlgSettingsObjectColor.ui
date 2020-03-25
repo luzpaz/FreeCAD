@@ -251,6 +251,12 @@
           <property name="text">
            <string>Two-side rendering</string>
           </property>
+          <property name="toolTip">
+           <string>The bottom side of surface will be rendered the same way than top side.
+If not checked, it depends on the option &quot;Enable backlight color&quot;
+(preferences section Display -&gt; 3D View). Either the backlight color
+will be used or black.</string>
+          </property>
           <property name="prefEntry" stdset="0">
            <cstring>TwoSideRendering</cstring>
           </property>

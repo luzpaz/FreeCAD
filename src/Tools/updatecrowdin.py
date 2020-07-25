@@ -50,8 +50,12 @@ Example:
 
 
 
-import sys,os,xml.sax,pycurl,StringIO
-
+import sys,os,xml.sax,pycurl
+try:
+    from StringIO import StringIO ## for Python 2
+except ImportError:
+    from io import StringIO ## for Python 3
+import io
 
 files = [ ["AddonManager.ts",      "/Mod/AddonManager/Resources/translations/AddonManager.ts"],
           ["Arch.ts",              "/Mod/Arch/Resources/translations/Arch.ts"],
@@ -142,7 +146,7 @@ if __name__ == "__main__":
     if arg == "status":
         c = pycurl.Curl()
         c.setopt(pycurl.URL, url+"status"+key+"&xml")
-        b = StringIO.StringIO()
+        b = io.StringIO()
         c.setopt(pycurl.WRITEFUNCTION, b.write)
         c.perform()
         c.close()
@@ -154,7 +158,7 @@ if __name__ == "__main__":
         print("Building (warning, this can be invoked only once per 30 minutes)...")
         c = pycurl.Curl()
         c.setopt(pycurl.URL, url+"export"+key)
-        b = StringIO.StringIO()
+        b = io.StringIO()
         c.setopt(pycurl.WRITEFUNCTION, b.write)
         c.perform()
         c.close()
@@ -175,7 +179,7 @@ if __name__ == "__main__":
             fields = [('files['+f[0]+']', (c.FORM_FILE, basepath+f[1]))]
             c.setopt(pycurl.URL, url+"update-file"+key)
             c.setopt(pycurl.HTTPPOST, fields)
-            b = StringIO.StringIO()
+            b = io.StringIO()
             c.setopt(pycurl.WRITEFUNCTION, b.write)
             c.perform()
             c.close()

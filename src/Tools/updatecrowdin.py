@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 #***************************************************************************
 #*                                                                         *
@@ -50,12 +50,13 @@ Example:
 
 
 
-import sys,os,xml.sax,pycurl
-try:
-    from StringIO import StringIO ## for Python 2
-except ImportError:
-    from io import StringIO ## for Python 3
+import sys
+import os
+import xml.sax
+
+import pycurl
 import io
+from io import StringIO # for Python 3
 
 files = [ ["AddonManager.ts",      "/Mod/AddonManager/Resources/translations/AddonManager.ts"],
           ["Arch.ts",              "/Mod/Arch/Resources/translations/Arch.ts"],

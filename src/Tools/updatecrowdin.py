@@ -151,7 +151,7 @@ if __name__ == "__main__":
         c.perform()
         c.close()
         handler = ResponseHandler()
-        xml.sax.parseString(b.getvalue(),handler)
+        xml.sax.parseString(b.getvalue(), handler)
         print(handler.data)
 
     elif arg == "build":
@@ -163,7 +163,7 @@ if __name__ == "__main__":
         c.perform()
         c.close()
         handler = ResponseHandler()
-        xml.sax.parseString(b.getvalue(),handler)
+        xml.sax.parseString(b.getvalue(), handler)
         print(handler.data)
 
     elif arg == "download":
@@ -174,7 +174,7 @@ if __name__ == "__main__":
     elif arg == "update":
         basepath = os.path.dirname(os.path.abspath("."))
         for f in files:
-            print("Sending ",f[0],"...")
+            print("Sending ", f[0], "...")
             c = pycurl.Curl()
             fields = [('files['+f[0]+']', (c.FORM_FILE, basepath+f[1]))]
             c.setopt(pycurl.URL, url+"update-file"+key)
@@ -184,7 +184,7 @@ if __name__ == "__main__":
             c.perform()
             c.close()
             handler = ResponseHandler()
-            xml.sax.parseString(b.getvalue(),handler)
+            xml.sax.parseString(b.getvalue(), handler)
             print(handler.data)
 
     else:

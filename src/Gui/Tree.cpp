@@ -449,6 +449,7 @@ TreeWidget::TreeWidget(const char *name, QWidget* parent)
 
     this->hideInTreeAction = new QAction(this);
     this->hideInTreeAction->setCheckable(true);
+    this->hideInTreeAction->setShortcut(Qt::Key_Space);
     connect(this->hideInTreeAction, SIGNAL(triggered()),
             this, SLOT(onHideInTree()));
 

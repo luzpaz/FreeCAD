@@ -1332,6 +1332,10 @@ void PythonConsole::contextMenuEvent ( QContextMenuEvent * e )
     } else if (exec == saveh) {
         hGrp->SetBool("SavePythonHistory", saveh->isChecked());
     }
+    
+    menu.addSeparator();
+    QAction* prefs = menu.addAction(tr("Console preferences"));
+    prefs->setToolTip(tr("Opens preference panel for Python console").arg(qApp->applicationName()));
 }
 
 void PythonConsole::onClearConsole()

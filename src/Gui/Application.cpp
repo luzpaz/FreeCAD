@@ -44,6 +44,7 @@
 #endif
 
 #include <boost/interprocess/sync/file_lock.hpp>
+#include <boost/filesystem.hpp>
 #include <QtOpenGL.h>
 #if defined(HAVE_QT5_OPENGL)
 #include <QWindow>
@@ -72,6 +73,7 @@
 #include "WidgetFactory.h"
 #include "Command.h"
 #include "Macro.h"
+#include "ThemeManager.h"
 #include "ProgressBar.h"
 #include "Workbench.h"
 #include "WorkbenchManager.h"
@@ -159,6 +161,9 @@ struct ApplicationP
             macroMngr = new MacroManager();
         else
             macroMngr = nullptr;
+
+        // Create the Theme Manager
+        themeManager = new ThemeManager();
     }
 
     ~ApplicationP()
@@ -172,6 +177,7 @@ struct ApplicationP
     Gui::Document*   activeDocument;
     Gui::Document*  editDocument;
     MacroManager*  macroMngr;
+    ThemeManager* themeManager;
     /// List of all registered views
     std::list<Gui::BaseView*> passive;
     bool isClosing;
@@ -1615,6 +1621,12 @@ CommandManager &Application::commandManager(void)
 {
     return d->commandManager;
 }
+
+Gui::ThemeManager* Application::themeManager(void)
+{
+    return d->themeManager;
+}
+
 
 //**************************************************************************
 // Init, Destruct and singleton

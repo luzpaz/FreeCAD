@@ -160,7 +160,7 @@ Py::Object MetadataPy::getUrl(void) const
 Py::Object dependencyToPyObject(const Meta::Dependency& d)
 {
     Py::Object pyDependency;
-    pyDependency.setAttr("package",Py::String(d.package));
+    pyDependency.setAttr("package", Py::String(d.package));
     pyDependency.setAttr("version_lt", Py::String(d.version_lt));
     pyDependency.setAttr("version_lte", Py::String(d.version_lte));
     pyDependency.setAttr("version_eq", Py::String(d.version_eq));

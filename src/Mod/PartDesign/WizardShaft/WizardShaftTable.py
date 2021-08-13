@@ -82,12 +82,12 @@ class WizardShaftTable:
         self.addColumn()
         self.setLength(0, 40.0)
         self.setDiameter(0, 50.0)
-        self.setConstraintType(0, QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "Fixed"))
+        self.setConstraintType(0, "Fixed")
         # Section 2
         self.addColumn()
         self.setLength(1, 80.0)
         self.setDiameter(1, 60.0)
-        self.setConstraintType(1, QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "Force"))
+        self.setConstraintType(1, "Force")
 
     def slotInsertColumn(self):
         # FIXME: Allow inserting columns, not just adding at the end

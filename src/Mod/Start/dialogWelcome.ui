@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>419</width>
+    <height>833</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Welcome</string>
+  </property>
+  <widget class="QLabel" name="image">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>6</y>
+     <width>400</width>
+     <height>178</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>400</width>
+     <height>178</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>151</y>
+     <width>251</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Welcome to the FreeCAD!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>187</y>
+     <width>407</width>
+     <height>72</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This appears to be the first time that you are using FreeCAD. We're slowly working to make the FreeCAD user interface friendlier. For now we've added this temporary wecome screen to help orient new users to get started.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>265</y>
+     <width>193</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>New to CAD?</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>301</y>
+     <width>407</width>
+     <height>54</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;FreeCAD is a complex application. If this is your first contact with FreeCAD, or you have never worked in CAD, consider getting a crash course at...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>390</y>
+     <width>407</width>
+     <height>108</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Migrating from another CAD suite? We have some guides to make the transition a little easier. But no matter how experienced you are you must consider learning somethings anew because there is a FreeCAD way/methodology. It will make your transition in the long-term much more optimized.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>503</y>
+     <width>407</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Fusion360 &amp;rarr; &lt;/span&gt;&lt;a href=&quot;https://wiki.freecad.org/Migrating_to_FreeCAD_from_Fusion360&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline; color:#1d99f3;&quot;&gt;Migrating from FreeCAD from Fusion360&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>590</y>
+     <width>151</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;→ &lt;/span&gt;&lt;a href=&quot;https://wiki.freecad.org/Topological_naming_problem&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline; color:#1d99f3;&quot;&gt;Toponaming&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;&lt;br/&gt;→ &lt;/span&gt;&lt;a href=&quot;https://wiki.freecad.org/Glossary&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline; color:#1d99f3;&quot;&gt;Glossary&lt;/span&gt;&lt;/a&gt;&lt;br/&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;→ &lt;/span&gt;&lt;a href=&quot;https://wiki.freecad.org/History&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline; color:#1d99f3;&quot;&gt;History&lt;/span&gt;&lt;/a&gt; of FreeCAD &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>664</y>
+     <width>144</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Reach out</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>700</y>
+     <width>407</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The secret to FreeCAD's success is its community. Connect with us on our &lt;a href=&quot;https://forum.freecad.org&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline; color:#1d99f3;&quot;&gt;forum&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>760</y>
+     <width>174</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>360</y>
+     <width>261</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Previous CAD experience?</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox">
+   <property name="geometry">
+    <rect>
+     <x>255</x>
+     <y>800</y>
+     <width>150</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="text">
+    <string>Do not display again</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>525</y>
+     <width>407</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;OnShape → &lt;/span&gt;&lt;a href=&quot;https://wiki.freecad.org/Migrating_to_FreeCAD_from_OnShape&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline; color:#1d99f3;&quot;&gt;Migrating from FreeCAD from OnShape&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>550</y>
+     <width>261</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Deeper dive</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>590</y>
+     <width>241</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;→ &lt;/span&gt;&lt;a href=&quot;https://wiki.freecad.org/Constructive_solid_geometry&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline; color:#1d99f3;&quot;&gt;CSG&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-weight:600;&quot;&gt; vs &lt;/span&gt;&lt;a href=&quot;https://wiki.freecad.org/Feature_editing&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline; color:#1d99f3;&quot;&gt;Feature editing&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-weight:600;&quot;/&gt;modeling&lt;a href=&quot;https://wiki.freecad.org/Feature_editing&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#1d99f3;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;→ Shortcuts/Key-Combo&lt;/span&gt; list&lt;br/&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;→ &lt;/span&gt;&lt;a href=&quot;tbd&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline; color:#1d99f3;&quot;&gt;Tips for creating stable models&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

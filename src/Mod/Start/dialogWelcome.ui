@@ -7,7 +7,11 @@
     <x>0</x>
     <y>0</y>
     <width>419</width>
+<<<<<<< Updated upstream
     <height>833</height>
+=======
+    <height>787</height>
+>>>>>>> Stashed changes
    </rect>
   </property>
   <property name="windowTitle">
@@ -56,11 +60,19 @@
      <x>6</x>
      <y>187</y>
      <width>407</width>
+<<<<<<< Updated upstream
      <height>72</height>
     </rect>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This appears to be the first time that you are using FreeCAD. We're slowly working to make the FreeCAD user interface friendlier. For now we've added this temporary wecome screen to help orient new users to get started.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+=======
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This appears to be the first time that you are using FreeCAD.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+>>>>>>> Stashed changes
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -70,7 +82,11 @@
    <property name="geometry">
     <rect>
      <x>6</x>
+<<<<<<< Updated upstream
      <y>265</y>
+=======
+     <y>215</y>
+>>>>>>> Stashed changes
      <width>193</width>
      <height>30</height>
     </rect>
@@ -88,7 +104,11 @@
    <property name="geometry">
     <rect>
      <x>6</x>
+<<<<<<< Updated upstream
      <y>301</y>
+=======
+     <y>251</y>
+>>>>>>> Stashed changes
      <width>407</width>
      <height>54</height>
     </rect>
@@ -104,7 +124,11 @@
    <property name="geometry">
     <rect>
      <x>6</x>
+<<<<<<< Updated upstream
      <y>390</y>
+=======
+     <y>340</y>
+>>>>>>> Stashed changes
      <width>407</width>
      <height>108</height>
     </rect>
@@ -120,7 +144,11 @@
    <property name="geometry">
     <rect>
      <x>9</x>
+<<<<<<< Updated upstream
      <y>503</y>
+=======
+     <y>453</y>
+>>>>>>> Stashed changes
      <width>407</width>
      <height>21</height>
     </rect>
@@ -136,7 +164,11 @@
    <property name="geometry">
     <rect>
      <x>6</x>
+<<<<<<< Updated upstream
      <y>590</y>
+=======
+     <y>540</y>
+>>>>>>> Stashed changes
      <width>151</width>
      <height>71</height>
     </rect>
@@ -152,7 +184,11 @@
    <property name="geometry">
     <rect>
      <x>6</x>
+<<<<<<< Updated upstream
      <y>664</y>
+=======
+     <y>614</y>
+>>>>>>> Stashed changes
      <width>144</width>
      <height>48</height>
     </rect>
@@ -170,7 +206,11 @@
    <property name="geometry">
     <rect>
      <x>6</x>
+<<<<<<< Updated upstream
      <y>700</y>
+=======
+     <y>650</y>
+>>>>>>> Stashed changes
      <width>407</width>
      <height>61</height>
     </rect>
@@ -186,7 +226,11 @@
    <property name="geometry">
     <rect>
      <x>230</x>
+<<<<<<< Updated upstream
      <y>760</y>
+=======
+     <y>710</y>
+>>>>>>> Stashed changes
      <width>174</width>
      <height>52</height>
     </rect>
@@ -202,7 +246,11 @@
    <property name="geometry">
     <rect>
      <x>6</x>
+<<<<<<< Updated upstream
      <y>360</y>
+=======
+     <y>310</y>
+>>>>>>> Stashed changes
      <width>261</width>
      <height>30</height>
     </rect>
@@ -220,7 +268,11 @@
    <property name="geometry">
     <rect>
      <x>255</x>
+<<<<<<< Updated upstream
      <y>800</y>
+=======
+     <y>750</y>
+>>>>>>> Stashed changes
      <width>150</width>
      <height>40</height>
     </rect>
@@ -236,7 +288,11 @@
    <property name="geometry">
     <rect>
      <x>9</x>
+<<<<<<< Updated upstream
      <y>525</y>
+=======
+     <y>475</y>
+>>>>>>> Stashed changes
      <width>407</width>
      <height>21</height>
     </rect>
@@ -252,7 +308,11 @@
    <property name="geometry">
     <rect>
      <x>6</x>
+<<<<<<< Updated upstream
      <y>550</y>
+=======
+     <y>500</y>
+>>>>>>> Stashed changes
      <width>261</width>
      <height>30</height>
     </rect>
@@ -270,7 +330,11 @@
    <property name="geometry">
     <rect>
      <x>160</x>
+<<<<<<< Updated upstream
      <y>590</y>
+=======
+     <y>540</y>
+>>>>>>> Stashed changes
      <width>241</width>
      <height>71</height>
     </rect>

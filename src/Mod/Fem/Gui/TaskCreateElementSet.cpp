@@ -1,9 +1,6 @@
 /***************************************************************************
- *   Copyright (c) 2023 Peter McB                                          *
- *   implementation of the erase elements function                         *
- *                                                                         *
- *   loosely based on: TaskCreateNodeSet.cpp                               *
  *   Copyright (c) 2013 Jürgen Riegel (FreeCAD@juergen-riegel.net)         *
+ *   Copyright (c) 2023 Peter McB                                          *
  *                                                                         *
  *   This file is part of the FreeCAD CAx development system.              *
  *                                                                         *

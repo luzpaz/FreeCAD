@@ -1,11 +1,10 @@
 # ***************************************************************************
+# *   Copyright (c) 2016 Frantisek Loeffelmann <LoffF@email.cz>             *
+# *   extension to the work of:                                             *
+# *       Frantisek Loeffelmann, Ulrich Brammer, Bernd Hahnebach            *
 # *   Copyright (c) 2023 Peter McB                                          *
 # *   added the function, mesh_2_femmesh, to convert the MESH               *
 # *                     into a triangular FEMMESH                           *
-# *                                                                         *
-# *   Copyright (c) 2016 Frantisek Loeffelmann <LoffF@email.cz>             *
-# *   extension to the work of:                                             *
-#         Frantisek Loeffelmann, Ulrich Brammer, Bernd Hahnebach            *
 # *                                                                         *
 # *   This program is free software; you can redistribute it and/or modify  *
 # *   it under the terms of the GNU Lesser General Public License (LGPL)    *

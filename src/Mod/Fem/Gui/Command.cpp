@@ -1,10 +1,6 @@
 /***************************************************************************
- *   Copyright (c) 2022 Peter McB                                          *
- *   added erase elements function                                         *
- *                                                                         *
- *   added to: Command.cpp                                                 *
- *                                                                         *
  *   Copyright (c) 2008 Jürgen Riegel <juergen.riegel@web.de>              *
+ *   Copyright (c) 2022 Peter McB                                          *
  *                                                                         *
  *   This file is part of the FreeCAD CAx development system.              *
  *                                                                         *
